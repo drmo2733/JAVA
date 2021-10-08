@@ -9,7 +9,7 @@ public class Conversion {
         int i = 257;
         double d = 323.142;
 
-        System.out.println("\nfrom double to int. ");
+        System.out.println("\nfrom int to byte. ");
         b = (byte) i;
 
         System.out.println("i and b " + i + " " + b);
