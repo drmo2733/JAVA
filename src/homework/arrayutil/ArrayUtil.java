@@ -12,7 +12,7 @@ public class ArrayUtil {
         int maximum;
         maximum = array[0];
 
-        for (int i = 1; i < 10; i++) {
+        for (int i = 1; i < array.length; i++) {
 
             if (array[i] > maximum) {
                 maximum = array[i];
@@ -23,7 +23,7 @@ public class ArrayUtil {
 //        3
         int minimum;
         minimum = array[0];
-        for (int i = 1; i <10; i++) {
+        for (int i = 1; i < array.length; i++) {
             if (array[i] < minimum) {
                 minimum = array[i];
             }
@@ -34,7 +34,27 @@ public class ArrayUtil {
 //        4
 
 
+        for (int i = 0; i < array.length; i++) {
+
+            if (array[i] % 2 == 0) {
+
+                System.out.println(array[i]);
+            }
+        }
+
+//          5
+
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] % 2 != 0) {
+                System.out.println(array[i]);
+            }
+        }
+
+
+
+        }
 
 
     }
-}
+
+
