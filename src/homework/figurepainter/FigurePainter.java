@@ -1,73 +1,71 @@
-package homework;
+package homework.figurepainter;
 
 public class FigurePainter {
-    public static void main(String[] args) {
-        for (int i = 0; i < 5; i++) {
+
+    void figureOne(int n, char c) {
+        for (int i = 0; i < n; i++) {
             for (int j = 0; j < i; j++) {
-                System.out.print("* ");
-            }
-            {
-                System.out.println();
-            }
-        }
-        for (int i = 0; i < 5; i++) {
-            for (int j = 5; j > i; j--) {
-                System.out.print("  ");
-            }
-            for (int j = 0; j < i; j++) {
-                System.out.print("* ");
-
-            }
-            System.out.println();
-        }
-        System.out.println();
-
-
-        for (int i = 0; i < 5; i++) {
-            for (int j = 4; j > i; j--) {
-                System.out.print("* ");
-
-
-            }
-            {
-                System.out.println();
-            }
-        }System.out.println();
-
-        for (int i = 0; i < 4; i++) {
-            for (int j = 0; j < i; j++) {
-                System.out.print("  ");
-            }
-            for (int j = 4; j > i; j--) {
-                System.out.print("* ");
-            }
-            System.out.println();
-
-        }
-
-        for (int i = 0; i < 4; i++) {
-            for (int j = 4; j > i; j--) {
-                System.out.print("  ");
-            }
-            for (int j = 0; j < i; j++) {
-                System.out.print(" *  ");
-
-            }
-            System.out.println();
-        }
-        for (int i = 0; i < 5; i++) {
-            for (int j = 0; j < i; j++) {
-                System.out.print("  ");
-            }
-            for (int j = 4; j > i; j--) {
-                System.out.print(" *  ");
+                System.out.print(c +" ");
             }
             System.out.println();
         }
     }
+
+    void figureTwo(int n, char c) {
+        for (int i = 0; i < n; i++) {
+            for (int j = 5; j > i; j--) {
+                System.out.print("  ");
+            }
+            for (int j = 0; j < i; j++) {
+                System.out.print(c +" ");
+
+            }
+            System.out.println();
+        }
+    }
+
+    void figureThree(int n, char c) {
+        for (int i = 0; i < n; i++) {
+            for (int j = 4; j > i; j--) {
+                System.out.print(c +" ");
+            }
+            System.out.println();
+        }
+    }
+
+    void figureFour(int n, char c) {
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < i; j++) {
+                System.out.print("  ");
+            }
+            for (int j = 4; j > i; j--) {
+                System.out.print(c +" ");
+            }
+            System.out.println();
+
+        }
+    }
+
+    void figureFive(int n, char c) {
+        for (int i = 0; i < n; i++) {
+            for (int j = 4; j > i; j--) {
+                System.out.print("  ");
+            }
+            for (int j = 0; j < i; j++) {
+                System.out.print(c +"   ");
+
+            }
+            System.out.println();
+        }
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < i; j++) {
+                System.out.print("  ");
+            }
+            for (int j = 4; j > i; j--) {
+                System.out.print(c +"   ");
+            }
+            System.out.println();
+        }
+
+    }
 }
-
-
-
-
-
